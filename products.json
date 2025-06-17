@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Cement Bag - 50kg",
+    "category": "Cement",
+    "price": 12.99,
+    "stock": 120,
+    "image": "https://example.com/images/cement.jpg"
+  },
+  {
+    "name": "Ceramic Floor Tile (Box)",
+    "category": "Tiles",
+    "price": 18.50,
+    "stock": 75,
+    "image": "https://example.com/images/ceramic_tile.jpg"
+  },
+  {
+    "name": "Reinforced Steel Rod - 12mm",
+    "category": "Steel",
+    "price": 7.25,
+    "stock": 200,
+    "image": "https://example.com/images/steel_rod.jpg"
+  },
+  {
+    "name": "Clay Brick - Standard",
+    "category": "Bricks",
+    "price": 0.55,
+    "stock": 1000,
+    "image": "https://example.com/images/clay_brick.jpg"
+  },
+  {
+    "name": "Plywood Sheet - 8x4 ft",
+    "category": "Wood",
+    "price": 22.00,
+    "stock": 40,
+    "image": "https://example.com/images/plywood.jpg"
+  },
+  {
+    "name": "Interior Wall Paint - 20L",
+    "category": "Paint",
+    "price": 29.99,
+    "stock": 30,
+    "image": "https://example.com/images/wall_paint.jpg"
+  },
+  {
+    "name": "Electrical Wire - 90m Roll",
+    "category": "Electrical",
+    "price": 19.75,
+    "stock": 60,
+    "image": "https://example.com/images/electrical_wire.jpg"
+  },
+  {
+    "name": "PVC Pipe - 4 inch x 6m",
+    "category": "Plumbing",
+    "price": 9.40,
+    "stock": 85,
+    "image": "https://example.com/images/pvc_pipe.jpg"
+  },
+  {
+    "name": "Roofing Sheet - Zinc Coated",
+    "category": "Roofing",
+    "price": 15.25,
+    "stock": 50,
+    "image": "https://example.com/images/roofing_sheet.jpg"
+  },
+  {
+    "name": "Sand - 1 Cubic Meter",
+    "category": "Aggregate",
+    "price": 35.00,
+    "stock": 20,
+    "image": "https://example.com/images/sand.jpg"
+  }
+]
