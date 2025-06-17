@@ -2,71 +2,79 @@
   {
     "name": "Cement Bag - 50kg",
     "category": "Cement",
-    "price": 12.99,
+    "price": 850,
     "stock": 120,
-    "image": "https://example.com/images/cement.jpg"
+    "image": "https://media.istockphoto.com/id/1448349078/photo/cement-bags-o-sacks-isolated-on-white.jpg?s=612x612&w=0&k=20&c=F5_VosP_qf9xYgyVth-Vs3OsSjaL0gZBMae39zZ3Zmg="
   },
   {
-    "name": "Ceramic Floor Tile (Box)",
+    "name": "Wood Fix",
     "category": "Tiles",
-    "price": 18.50,
+    "price": 1500,
     "stock": 75,
-    "image": "https://example.com/images/ceramic_tile.jpg"
+    "image": "https://bigbuyoman.com/wp-content/uploads/2022/12/bb_woodfix_wood_glue_5kg.png"
   },
   {
-    "name": "Reinforced Steel Rod - 12mm",
-    "category": "Steel",
-    "price": 7.25,
+    "name": "Moraale paines or wooden",
+    "category": "wood",
+    "price": 800,
     "stock": 200,
-    "image": "https://example.com/images/steel_rod.jpg"
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/HW/KG/SQ/143354869/syp-wood-timber-plank.jpg"
   },
   {
-    "name": "Clay Brick - Standard",
-    "category": "Bricks",
-    "price": 0.55,
+    "name": "Safiito - Chipwood",
+    "category": "chipwood",
+    "price": 1000,
     "stock": 1000,
-    "image": "https://example.com/images/clay_brick.jpg"
+    "image": "https://frederickpkg.com/wp-content/uploads/2020/11/999999999.20201027202323080.999999999.20201027202323080T6vlP.jpeg"
   },
   {
-    "name": "Plywood Sheet - 8x4 ft",
-    "category": "Wood",
-    "price": 22.00,
+    "name": "White Quartz - 8x4 ft",
+    "category": "Quartz",
+    "price": 3000,
     "stock": 40,
-    "image": "https://example.com/images/plywood.jpg"
+    "image": "https://401758.fs1.hubspotusercontent-na1.net/hubfs/401758/Imported_Blog_Media/Palladian-Grey-Vetrazzo-Kitchen-Ana-Barbara-1%5B1%5D.jpg"
   },
   {
-    "name": "Interior Wall Paint - 20L",
-    "category": "Paint",
-    "price": 29.99,
+    "name": "Single Socket Large SINU(Original)",
+    "category": "Socket",
+    "price": 270,
     "stock": 30,
-    "image": "https://example.com/images/wall_paint.jpg"
+    "image": "https://s.alicdn.com/@sc04/kf/Hb9ee563d300447a98dffa6962bd4a8a9h.jpg_300x300.jpg"
   },
   {
     "name": "Electrical Wire - 90m Roll",
     "category": "Electrical",
-    "price": 19.75,
+    "price": 2800,
     "stock": 60,
-    "image": "https://example.com/images/electrical_wire.jpg"
+    "image": "https://5.imimg.com/data5/SELLER/Default/2023/12/366434701/TT/XD/DW/2673754/electric-house-wire-500x500.jpg"
   },
   {
     "name": "PVC Pipe - 4 inch x 6m",
     "category": "Plumbing",
-    "price": 9.40,
+    "price": 640,
     "stock": 85,
-    "image": "https://example.com/images/pvc_pipe.jpg"
+    "image": "https://5.imimg.com/data5/SELLER/Default/2024/5/415409781/YS/CS/PV/9185276/supreme-pvc-pipe-110-mm-6kg-250x250.jpg"
   },
   {
     "name": "Roofing Sheet - Zinc Coated",
     "category": "Roofing",
     "price": 15.25,
     "stock": 50,
-    "image": "https://example.com/images/roofing_sheet.jpg"
+    "image": "https://www.crayonroofings.com/blog/wp-content/uploads/2021/10/coloured-roofing-sheet-500x500-1.jpg"
   },
   {
-    "name": "Sand - 1 Cubic Meter",
-    "category": "Aggregate",
+    "name": "ELECTRIC:Breaker GACIA 10A",
+    "category": "Electrical",
     "price": 35.00,
     "stock": 20,
-    "image": "https://example.com/images/sand.jpg"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypwWe1FOhHwHkGKmwOUfb-ahYF6om_jUMrQ&s"
+  },
+  {
+  "name": "WOOD:Brown Eucalyptus Wooden Pole",
+  "category": "Wood",
+  "price": 1200,
+  "stock": 50,
+  "image": "https://5.imimg.com/data5/SELLER/Default/2023/11/361176559/AM/JL/KG/15256749/eucalyptus-wooden-pole-500x500.png"
   }
+
 ]
