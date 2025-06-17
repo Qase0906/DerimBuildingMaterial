@@ -84,30 +84,33 @@ i {
 
 .cart-popup {  
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 80px;
   right: 0;
-  background-color: #f4f4f4;
+  background-color: #fff;
   width: 500px;
-  height: 100vh;
+  height: 0;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;  
   gap: 1.25rem;
   overflow: auto;   
-  transition: opacity .3s ease-in-out;
-  border-radius: 0 0 5px 5px;  
+  transition: opacity .3s ease-in-out, height .3s ease-in-out;
+  border-radius: 0 0 5px 5px; 
+  z-index: 999; 
 }
 
 .active-popup{
   opacity: 1;
-  transition: opacity .3s ease-in-out;
+  height: 100vh;
+  transition: opacity .3s ease-in-out, height .3s ease-in-out;
+
 }
 
 .items-container{
   width: 100%;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .items-box {
@@ -119,23 +122,30 @@ i {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 0 3px  rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
 .img-title {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: .5rem;  
 }
 
 .pro-img {
   width: 100px;
   object-fit: cover;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   border-radius: 10px;
+  /* height: 80px; */
+}
+
+.pro-title {
+  width: 110px;
+  max-width: 110px;
 }
 
 .pro-title h3{
-  font-size: .85rem;
+  font-size: .75rem;
 }
 .pro-title p{
   font-size: .75rem;
@@ -178,6 +188,7 @@ i {
     height: 100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(39, 76, 119, 0.5)) ,url('https://t3.ftcdn.net/jpg/03/54/80/38/360_F_354803870_YIuF16KDgssVB6qAUXC2Ds8mCHgANuTl.jpg') center / cover no-repeat;
     margin-top: 80px;
+    z-index: -999;
 }
 
 .hero-content {    

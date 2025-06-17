@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Cement Bag - 50kg",
     "category": "Cement",
     "price": 850,
@@ -7,6 +8,7 @@
     "image": "https://media.istockphoto.com/id/1448349078/photo/cement-bags-o-sacks-isolated-on-white.jpg?s=612x612&w=0&k=20&c=F5_VosP_qf9xYgyVth-Vs3OsSjaL0gZBMae39zZ3Zmg="
   },
   {
+    "id": 2,
     "name": "Wood Fix",
     "category": "Tiles",
     "price": 1500,
@@ -14,6 +16,7 @@
     "image": "https://bigbuyoman.com/wp-content/uploads/2022/12/bb_woodfix_wood_glue_5kg.png"
   },
   {
+    "id": 3,
     "name": "Moraale paines or wooden",
     "category": "wood",
     "price": 800,
@@ -21,6 +24,7 @@
     "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/HW/KG/SQ/143354869/syp-wood-timber-plank.jpg"
   },
   {
+    "id": 4,
     "name": "Safiito - Chipwood",
     "category": "chipwood",
     "price": 1000,
@@ -28,6 +32,7 @@
     "image": "https://frederickpkg.com/wp-content/uploads/2020/11/999999999.20201027202323080.999999999.20201027202323080T6vlP.jpeg"
   },
   {
+    "id": 5,
     "name": "White Quartz - 8x4 ft",
     "category": "Quartz",
     "price": 3000,
@@ -35,6 +40,7 @@
     "image": "https://401758.fs1.hubspotusercontent-na1.net/hubfs/401758/Imported_Blog_Media/Palladian-Grey-Vetrazzo-Kitchen-Ana-Barbara-1%5B1%5D.jpg"
   },
   {
+    "id": 6,
     "name": "Single Socket Large SINU(Original)",
     "category": "Socket",
     "price": 270,
@@ -42,6 +48,7 @@
     "image": "https://s.alicdn.com/@sc04/kf/Hb9ee563d300447a98dffa6962bd4a8a9h.jpg_300x300.jpg"
   },
   {
+    "id": 7,
     "name": "Electrical Wire - 90m Roll",
     "category": "Electrical",
     "price": 2800,
@@ -49,6 +56,7 @@
     "image": "https://5.imimg.com/data5/SELLER/Default/2023/12/366434701/TT/XD/DW/2673754/electric-house-wire-500x500.jpg"
   },
   {
+    "id": 8,
     "name": "PVC Pipe - 4 inch x 6m",
     "category": "Plumbing",
     "price": 640,
@@ -56,6 +64,7 @@
     "image": "https://5.imimg.com/data5/SELLER/Default/2024/5/415409781/YS/CS/PV/9185276/supreme-pvc-pipe-110-mm-6kg-250x250.jpg"
   },
   {
+    "id": 9,
     "name": "Roofing Sheet - Zinc Coated",
     "category": "Roofing",
     "price": 15.25,
@@ -63,6 +72,7 @@
     "image": "https://www.crayonroofings.com/blog/wp-content/uploads/2021/10/coloured-roofing-sheet-500x500-1.jpg"
   },
   {
+    "id": 10,
     "name": "ELECTRIC:Breaker GACIA 10A",
     "category": "Electrical",
     "price": 35.00,
@@ -70,11 +80,12 @@
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypwWe1FOhHwHkGKmwOUfb-ahYF6om_jUMrQ&s"
   },
   {
-  "name": "WOOD:Brown Eucalyptus Wooden Pole",
-  "category": "Wood",
-  "price": 1200,
-  "stock": 50,
-  "image": "https://5.imimg.com/data5/SELLER/Default/2023/11/361176559/AM/JL/KG/15256749/eucalyptus-wooden-pole-500x500.png"
+    "id": 11,
+    "name": "WOOD:Brown Eucalyptus Wooden Pole",
+    "category": "Wood",
+    "price": 1200,
+    "stock": 50,
+    "image": "https://5.imimg.com/data5/SELLER/Default/2023/11/361176559/AM/JL/KG/15256749/eucalyptus-wooden-pole-500x500.png"
   }
 
 ]
