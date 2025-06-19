@@ -133,7 +133,7 @@ function addToCart(products, productBoxes) {
       );
       for (const key in getData) {
         if (getData[key].id === product.id) {
-          alert("Item already in cart!");
+          alert("Item already in cart!"); 
           return;
         } else if (existingItemInCart) {
           alert("Item already in cart!");

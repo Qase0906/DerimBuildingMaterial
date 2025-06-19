@@ -497,6 +497,11 @@ h1 span {
   .product-section h1 {
     text-align: center;
   }
+
+  /* Cart Popup */
+  .cart-popup {
+    width: 400px;
+  }
 }
 
 
