@@ -94,7 +94,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;  
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
   overflow: auto;   
   transition: opacity .3s ease-in-out, height .3s ease-in-out;
   border-radius: 0 0 5px 5px; 
@@ -111,6 +111,21 @@ i {
 .items-container{
   width: 100%;
   /* margin-top: 3rem; */
+}
+
+.total-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #F78C25;
+  margin-bottom: 0.5rem;
 }
 
 .items-box {
