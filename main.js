@@ -7,6 +7,8 @@ const productContainer = document.querySelector(".product-container");
 const itemsContainer = cartPopup.querySelector(".items-container");
 const countInCart = cart.querySelector("#cart-count");
 const price = document.querySelector(".total-price h3");
+const emptyCart = itemsContainer.querySelector(".empty-cart");
+
 
 // Load Cart from LocalStorage
 
@@ -14,42 +16,16 @@ window.addEventListener("DOMContentLoaded", loadToCart);
 
 function loadToCart() {
   const getdata = JSON.parse(localStorage.getItem("items"));
-  if (!getdata) return;
-  const emptyCart = itemsContainer.querySelector(".empty-cart");
-  emptyCart.remove(); // if something is added to cart "Your cart is empty" text is removed.
+  if (!getdata) return;   
+  
+  emptyCart.remove();  
 
   getdata.forEach((product) => {
-    const itemsBox = document.createElement("div");
-    itemsBox.className = "items-box";
-
-    itemsBox.innerHTML = `
-                        <div class="img-title">
-                            <div class="pro-img">
-                                <img src=${product.image} alt="Wire">
-                            </div>
-                            <div class="pro-title">
-                                <h3>${product.name}</h3>
-                                <p>${product.category}</p>
-                            </div> 
-                        </div>
-
-                        <p id="price">${product.price}</p>
-                        
-                        <div class="num-items">
-                            <span>-</span>
-                            <span>0</span>
-                            <span>+</span>
-                        </div>
-                        <div class="delete">
-                            <span><i class="fa-solid fa-trash"></i></span>
-                        </div>
-                `;
-
-    itemsContainer.appendChild(itemsBox);
-    // console.log(itemsContainer);
-
+    createItemsBox(product)
     price.textContent = totalAmount += product.price; // this line gives totalPrice of the product
-    countInCart.textContent = count++; // Total items you added to the Cart
+    count++;
+    countInCart.textContent = count; // Total items you added to the Cart    
+  
   });
 }
 
@@ -63,12 +39,12 @@ cart.addEventListener("click", () => {
   cartPopup.classList.toggle("active-popup");
 });
 
-window.addEventListener('click', (e)=> {
-  if(!cart.contains(e.target) && !cartPopup.contains(e.target)){
-    cartPopup.classList.remove('active-popup');
-  }
+// window.addEventListener('click', (e)=> {
+//   if(!cart.contains(e.target) && !cartPopup.contains(e.target)){
+//     cartPopup.classList.remove('active-popup');
+//   }
   
-})
+// })
 
 // JSON FETCH API
 async function fetchData() {
@@ -112,19 +88,16 @@ function displayProduct(products) {
 }
 
 // Add to cart
-let count = 1;
+let count = 0;
 let totalAmount = 0;
+let countItems = 0;
 
-function addToCart(products, productBoxes) {
+function addToCart(products, productBoxes) {  
   products.forEach((product, index) => {
     const productBox = productBoxes[index];
     const addCart = productBox.querySelector(".add-to-cart");
-    const emptyCart = itemsContainer.querySelector(".empty-cart");
-
-    addCart.addEventListener("click", () => {
-      const itemsBox = document.createElement("div");
-      itemsBox.className = "items-box";
-      itemsBox.setAttribute("data-id", product.id);
+    
+    addCart.addEventListener("click", () => {       
 
       // Checks if the product in cart
       const getData = JSON.parse(localStorage.getItem("items"));
@@ -143,38 +116,18 @@ function addToCart(products, productBoxes) {
 
       if (emptyCart) {
         emptyCart.remove(); // if something is added to cart "Your cart is empty" text is removed.
+      }else {
+        emptyCart.innerHTML = 'Your cart is empty';
       }
 
-      itemsBox.innerHTML = `
-                          <div class="img-title">
-                              <div class="pro-img">
-                                  <img src=${product.image} alt="Wire">
-                              </div>
-                              <div class="pro-title">
-                                  <h3>${product.name}</h3>
-                                  <p>${product.category}</p>
-                              </div> 
-                          </div>
-
-                          <p id="price">${product.price}</p>
-                          
-                          <div class="num-items">
-                              <span>-</span>
-                              <span>0</span>
-                              <span>+</span>
-                          </div>
-                          <div class="delete">
-                              <span><i class="fa-solid fa-trash"></i></span>
-                          </div>
-                  `;
-
-      itemsContainer.appendChild(itemsBox);
+      createItemsBox(product);      
 
       // Total Price
       price.textContent = totalAmount += product.price;
 
       //   Count Items in Cart
-      countInCart.textContent = count++;
+      count++
+      countInCart.textContent = count;
 
       const items = {
         id: product.id,
@@ -186,9 +139,80 @@ function addToCart(products, productBoxes) {
 
       setItemstoLocalStorage(items);
       // console.log(itemsBox)
+            
     });
   });
+
 }
+
+
+
+
+function createItemsBox(product){
+  const itemsBox = document.createElement("div");
+  itemsBox.className = "items-box";
+  itemsBox.setAttribute("data-id", product.id);
+
+    itemsBox.innerHTML = `
+                        <div class="img-title">
+                            <div class="pro-img">
+                                <img src=${product.image} alt="Wire">
+                            </div>
+                            <div class="pro-title">
+                                <h3>${product.name}</h3>
+                                <p>${product.category}</p>
+                            </div> 
+                        </div>
+
+                        <p id="price">${product.price}</p>
+                        
+                        <div class="num-items">
+                            <span>-</span>
+                            <span>0</span>
+                            <span>+</span>
+                        </div>
+                        <div class="delete">
+                            <span><i class="fa-solid fa-trash"></i></span>
+                        </div>
+                `;
+
+    itemsContainer.appendChild(itemsBox);
+    // increasing NumOfItems
+      const numOfItems = itemsBox.querySelector('.num-items span:nth-child(2)');      
+      numOfItems.textContent = countItems + 1;
+      // console.log(numOfItems)
+    
+    // delete Item       
+    const deleteBtn = itemsBox.querySelector('.delete');
+    deleteBtn.addEventListener('click', ()=> handleDeleteItem(product, itemsBox));
+
+}
+
+
+// Handle delete button
+function handleDeleteItem(product, itemsBox){
+  const getData = JSON.parse(localStorage.getItem('items'));
+  if(!getData)return;      
+      
+  const newData = getData.filter(pid => pid.id !== product.id);   
+  itemsBox.remove();   
+      
+  price.textContent = totalAmount -= product.price;
+  count--;
+  if(count >= 1){     
+    countInCart.textContent = count; 
+  }else{
+    countInCart.textContent = "";    
+  }
+  
+
+  console.log(countInCart)
+             
+
+  localStorage.setItem('items', JSON.stringify(newData));
+}
+
+
 
 // set To localStorage
 function setItemstoLocalStorage(item) {
@@ -201,3 +225,9 @@ function setItemstoLocalStorage(item) {
     localStorage.setItem("items", JSON.stringify(storedItems));
   }
 }
+
+
+
+// AddEventListeners
+
+

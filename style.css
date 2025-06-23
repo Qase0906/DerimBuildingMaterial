@@ -148,10 +148,8 @@ i {
 
 .pro-img {
   width: 100px;
-  object-fit: cover;
-  /* background-color: #f4f4f4; */
-  border-radius: 10px;
-  /* height: 80px; */
+  object-fit: cover;  
+  border-radius: 10px;  
 }
 
 .pro-title {
@@ -279,6 +277,7 @@ h1 span {
 .product-section h1 {
   padding: 1rem 4rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .product-container {
