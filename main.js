@@ -16,15 +16,21 @@ window.addEventListener("DOMContentLoaded", loadToCart);
 
 function loadToCart() {
   const getdata = JSON.parse(localStorage.getItem("items"));
-  if (!getdata) return;   
+  if (!getdata) return; 
   
-  emptyCart.remove();  
+  if(getdata.length >= 1){
+    emptyCart.remove();
+  }else{
+    emptyCart.textContent = 'Your cart is empty';
+  }
+  
+    
 
   getdata.forEach((product) => {
     createItemsBox(product)
     price.textContent = totalAmount += product.price; // this line gives totalPrice of the product
     count++;
-    countInCart.textContent = count; // Total items you added to the Cart    
+    countInCart.textContent = count; // Total items you added to the Cart
   
   });
 }
