@@ -354,9 +354,9 @@ h1 span {
   background-color: white;
 }
 
-.flex-container {
+.call-to-action .container {
   width: 100%;
-  height: 80%;
+  /* height: 80%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -852,14 +852,13 @@ footer ul li a{
     font-size: 1.2rem;
 }
   
-  .flex-container {
+  .call-to-action .container {
     flex-wrap: wrap;
     height: auto;
-    
+
   }
 
-  .text-flex, .image-flex {
-    /* padding: 1rem;  */
+  .text-flex, .image-flex {    
     flex: 1 1 300px;   
   }
 
@@ -954,8 +953,28 @@ footer ul li a{
   /* contact  */
   .form input {
     width: 100%;
-    padding: 0;
+    padding: 1rem;
   }
+  .testimonial .container h1{
+    font-size: 2.5rem;
+    padding: 1rem 0;    
+  }
+
+  .call-action .container h1 {
+    font-size: 2.5rem;
+  }
+  .call-action p {
+    font-size: .75rem;
+    line-height: 2rem;
+  }
+
+  .call-action .btn button{
+    width: 300px;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+ }
+
 }
 
 
@@ -978,6 +997,3 @@ footer ul li a{
   } 
 
 }
-
-
-
