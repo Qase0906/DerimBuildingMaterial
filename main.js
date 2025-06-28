@@ -19,9 +19,9 @@ function loadToCart() {
   if (!getdata) return; 
   
   if(getdata.length >= 1){
-    emptyCart.remove();
+    emptyCart.style.display = 'none'; 
   }else{
-    emptyCart.textContent = 'Your cart is empty';
+    emptyCart.style.display = 'block'; 
   }
   
     
@@ -121,15 +121,16 @@ function addToCart(products, productBoxes) {
       }
 
       if (emptyCart) {
-        emptyCart.remove(); // if something is added to cart "Your cart is empty" text is removed.
+        emptyCart.style.display = 'none'; 
       }else {
-        emptyCart.innerHTML = 'Your cart is empty';
+        emptyCart.textContent = 'Your cart is empty';
       }
 
       createItemsBox(product);      
 
       // Total Price
-      price.textContent = totalAmount += product.price;
+      totalAmount += product.price
+      price.textContent = `Br ${totalAmount}`;
 
       //   Count Items in Cart
       count++
@@ -172,21 +173,12 @@ function createItemsBox(product){
 
                         <p id="price">${product.price}</p>
                         
-                        <div class="num-items">
-                            <span>-</span>
-                            <span>0</span>
-                            <span>+</span>
-                        </div>
                         <div class="delete">
                             <span><i class="fa-solid fa-trash"></i></span>
                         </div>
                 `;
 
-    itemsContainer.appendChild(itemsBox);
-    // increasing NumOfItems
-      const numOfItems = itemsBox.querySelector('.num-items span:nth-child(2)');      
-      numOfItems.textContent = countItems + 1;
-      // console.log(numOfItems)
+    itemsContainer.appendChild(itemsBox);         
     
     // delete Item       
     const deleteBtn = itemsBox.querySelector('.delete');
@@ -208,14 +200,12 @@ function handleDeleteItem(product, itemsBox){
   if(count >= 1){     
     countInCart.textContent = count; 
   }else{
-    countInCart.textContent = "";    
-  }
-  
-
-  console.log(countInCart)
-             
+    countInCart.textContent = "";
+    emptyCart.style.display = 'block';      
+  }           
 
   localStorage.setItem('items', JSON.stringify(newData));
+  
 }
 
 
