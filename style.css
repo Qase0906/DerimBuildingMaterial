@@ -947,6 +947,8 @@ footer ul li a{
   /* product Section */
   .product-container{
     gap: .75rem;
+    justify-content: center;
+    align-items: center;
   }
   .product-box {
     width: 180px;
