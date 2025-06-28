@@ -957,7 +957,7 @@ footer ul li a{
   }
   .testimonial .container h1{
     font-size: 2.5rem;
-    padding: 1rem 0;    
+    padding: 1rem;    
   }
 
   .call-action .container h1 {
@@ -965,7 +965,7 @@ footer ul li a{
   }
   .call-action p {
     font-size: .75rem;
-    line-height: 2rem;
+    line-height: 1.25rem;
   }
 
   .call-action .btn button{
