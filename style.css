@@ -745,10 +745,10 @@ footer ul li a{
   font-size: .85rem;  
 }
 
-/* .copy-right {
+.copy-right {
   grid-column: 1 / span 4;
   text-align: center;
-} */
+}
 
 
 
@@ -908,6 +908,10 @@ footer ul li a{
     grid-template-columns: repeat(2, 1fr);
     height: auto;
     align-content: center;
+  }
+  .copy-right {
+    grid-column: 1 / span 2;
+    text-align: center;
   }
 
 }
