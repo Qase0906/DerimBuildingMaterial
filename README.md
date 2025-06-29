@@ -26,12 +26,12 @@ A responsive website with shopping cart web application for a building materials
 ## 📁 Folder Structure
 
 📦 project-folder/
-┣ 📜 index.html
-┣ 📜 style.css
-┣ 📜 script.js
-┣ 📜 products.json
-┗ 📁 assets/
-┗ 📁 images/
+    📜 index.html
+    📜 style.css
+    📜 script.js
+    📜 products.json
+    📁 assets/
+    📁 images/
 
 
 ✨ To-Do / Improvements
