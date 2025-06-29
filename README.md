@@ -2,7 +2,7 @@
 
 A responsive website with shopping cart web application for a building materials store. Built with JavaScript, HTML, and CSS. Supports dynamic product rendering, cart management with data persistence using localStorage.
 
----
+----------------------------------------------------------
 
 ## 🚀 Features
 
@@ -13,6 +13,8 @@ A responsive website with shopping cart web application for a building materials
 - 💾 Save cart to localStorage
 - 📱 Fully responsive layout
 
+-----------------------------------------------------
+
 
 ## 🛠️ Tech Stack
 
@@ -22,6 +24,7 @@ A responsive website with shopping cart web application for a building materials
 - LocalStorage
 - Fetch API (for loading product data)
 
+-----------------------------------------------------
 
 ## 📁 Folder Structure
 
@@ -32,6 +35,8 @@ A responsive website with shopping cart web application for a building materials
     📜 products.json
     📁 assets/
     📁 images/
+
+------------------------------------------------------
 
 
 ✨ To-Do / Improvements
@@ -46,11 +51,15 @@ A responsive website with shopping cart web application for a building materials
 
 - Add product filters/search
 
+-----------------------------
 
+🧑‍💻 Author.
 
-🧑‍💻 Author
-    Abdisamed (Qase)
+    Abdisamed (Qase).
+
 💼 Frontend Developer 
 
+--------------------------------------------------------
+
 📃 License
-This project is open-source and free to use.
+    This project is open-source and free to use.
