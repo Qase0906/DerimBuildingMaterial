@@ -55,7 +55,7 @@ A responsive website with shopping cart web application for a building materials
 
 🧑‍💻 Author.
 
-    Abdisamed (Qase).
+    Abdisamed Abdi.
 
 💼 Frontend Developer 
 
