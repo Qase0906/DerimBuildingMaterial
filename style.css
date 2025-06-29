@@ -443,7 +443,7 @@ h1 span {
 /* Testimonial Section */
 
 .testimonial {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   background-color: white;
   display: flex;
@@ -456,9 +456,7 @@ h1 span {
 
 .testimonial .container {
   padding-bottom: 2.75rem;
-  text-align: center;
-  /* width: 100%;
-  height: 100%; */
+  text-align: center;  
 }
 .testimonial .container h1{
   font-size: 3rem;
@@ -466,14 +464,13 @@ h1 span {
 }
 
 .feedbacks {
-  width: 90%;
-  /* height: 100%;   */
+  width: 90%;  
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.75rem;
   padding: 1.25rem;
-  flex-wrap: wrap;
+  
 }
 
 .feedback {
@@ -860,15 +857,26 @@ footer ul li a{
     padding: 1rem 1.7rem;
     font-size: 1.2rem;
 }
+
+  .call-to-action{
+    height: auto;
+  }
   
   .call-to-action .container {
     flex-wrap: wrap;
     height: auto;
-
   }
 
   .text-flex, .image-flex {    
     flex: 1 1 300px;   
+  }
+
+  /* Testimonial */
+  .testimonial {
+    height: auto;
+  }
+  .feedbacks{
+    flex-wrap: wrap;
   }
 
   /* about */
