@@ -8,7 +8,6 @@ A responsive website with shopping cart web application for a building materials
 
 - 📦 Display products from a JSON API
 - ➕ Add items to cart
-- 🧮 Adjust item quantity with + / - buttons
 - 💵 Dynamic total price calculation
 - 🗑️ Remove items from cart
 - 💾 Save cart to localStorage
